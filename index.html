@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- current version of bootstrap as of March 20, 2017. Uncomment to use -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <!-- current version of jQuery as of March 20, 2017 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title></title>
+  </head>
+  <body>
+
+    <!-- begin container -->
+    <div class="container">
+      <h1>Voting Information</h1>
+
+      <!-- begin homePage div -->
+      <div class="homePage">
+        <p>
+          Submit your age below to see what information is most pertinent to you in your quest for voting and participating in our beautifully flawed democracy!
+        </p>
+
+        <form id="age-form">
+          <label for="age">Enter your age:</label>
+          <input id="age" type="text"></input>
+          <button type="submit" class="btn">Submit!</button>
+        </form>
+      <!-- end homePage div -->
+      </div>
+
+      <!-- begin div containing info for persons under the age of 18. initially hidden -->
+      <div id="under-18" class="hide">
+
+        <h2>You are under the age of 18!</h2>
+        <p>Unfortunately, you cannot vote yet, but here is some information to prepare you for when that time comes.</p>
+        <p>
+          <a href="http://sos.oregon.gov/voting/Pages/voteinor.aspx">Read up</a>.
+        </p>
+
+      <!-- end under -8 div -->
+      </div>
+
+      <!-- begin div containing info for persons 18 or older. initially hidden -->
+      <div id="over-18" class="hide">
+
+        <h2>You are eligible to vote!</h2>
+        <p>Below is some information to assist you through the voting process.</p>
+
+        <p>
+          <a href="https://secure.sos.state.or.us/orestar/vr/register.do">Click here</a> to register to vote online in the state of Oregon.<br>
+          Use <a href="http://sos.oregon.gov/voting/Pages/drop-box-locator.aspx">this</a> link to find the nearest ballot drop box in your area.
+        </p>
+
+      <!-- end over-18 div -->
+      </div>
+
+
+
+    <!-- end container -->
+    </div>
+  </body>
+</html>
